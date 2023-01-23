@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+header,
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+body, input, textarea {
+    font-family: "Roboto", sans-serif;
+}
+header,
+section h2, h3, button {
+    font-family: "Bungee", cursive;
+}
+header h1,
+section h2,
+section h3,
+button {
+    font-weight: normal;
+}
+header div.container,
+section#about div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav li {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 16px;
+}
+header nav li a {
+    color: #ecf0f1;    
+}
+
+section#about .brands-list li {
+    display: inline;
+    margin-right: 16px;
+}
+section#about .brands-list img {
+    height: 24px;
+}
+section#about div.container {
+    align-items: flex-start;
+}
+section#about .store-front {
+    margin-right: 32px;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+section p {
+    margin-bottom: 8px;
+}
+section {
+    color: #182c61;
+}
+
+
+section#contact .contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+section#contact .contact-methods h3 {
+    margin-bottom: 16px;
+}
+section#contact form label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+}
+
+section#contact form input:focus,
+section#contact form textarea:focus {
+    outline-color:  #182c61
+}
+
+section#contact form input,
+section#contact form textarea,
+section#contact form button {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 320px;
+}
+section#contact form textarea {
+    resize: none;
+    height: 180px;
+}
+section#contact form button {
+    background-color: #182c61;
+    border: none;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+section#contact form button:hover {
+    background-color: #313e8e;
+}
+
+section#contact .social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+section#contact .social-links li img {
+    height: 24px;
+}
+
+
+
+@media (max-width: 1024px) {
+    section#about div.container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section#about .store-front {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    section#contact .contact-methods {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    section#contact .contact-methods p,
+    section#contact .contact-methods h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section#contact .contact-methods form {
+        width: 80%;
+    }
+    footer p {
+        text-align: center;
+    }
+}
